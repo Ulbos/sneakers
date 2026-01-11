@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ оформлен</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Сброс стилей и шрифты */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.order-container {
+    text-align: center;
+    max-width: 350px;
+    padding: 20px;
+}
+
+/* Иконка (имитация документа) */
+.icon-box {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.document-icon {
+    width: 80px;
+    height: 110px;
+    background: #f0eeff; /* Светло-фиолетовый фон */
+    border-radius: 8px;
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.lines {
+    height: 4px;
+    background: #7d6ed9; /* Цвет линий */
+    margin-bottom: 8px;
+    border-radius: 2px;
+    width: 80%;
+}
+
+.checkmark {
+    position: absolute;
+    bottom: 5px;
+    right: -15px;
+    width: 45px;
+    height: 45px;
+    background: #2cbba3; /* Цвет кружка с галочкой */
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: rotate(5deg);
+}
+
+/* Текстовые стили */
+.title {
+    color: #8cc63f; /* Тот самый салатовый цвет */
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.description {
+    color: #a0a0a0; /* Серый текст */
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+/* Кнопка */
+.back-button {
+    background-color: #a3d467; /* Цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 35px; /* Сильное скругление */
+    padding: 18px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #92c356;
+}
+
+.arrow-icon {
+    width: 24px;
+    height: 24px;
+}
+</style>
+<body>
+
+    <div class="order-container">
+        <div class="icon-box">
+            <img src="./assets/icons/done-order.svg" alt="">
+        </div>
+
+        <h1 class="title">Заказ оформлен!</h1>
+        <p class="description">
+            Ваш заказ #18 скоро будет передан курьерской доставке
+        </p>
+
+        <button class="back-button">
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Вернуться назад
+        </button>
+    </div>
+
+</body>
+</html>
